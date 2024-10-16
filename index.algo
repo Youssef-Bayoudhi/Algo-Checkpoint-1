@@ -1,0 +1,16 @@
+ALGORITHM read sentence
+VAR
+    sentence : STRING
+    char : CHAR
+    length , vowel , word : INTEGER 
+BEGIN
+length,vowel,word := 0
+   FOR char in sentence DO
+    length := length+1
+ IF (char := '','.') THEN
+    word := word+1
+ END_IF
+ IF (char := 'a','e','i','o','u','y','A','E','I','O','U','Y')THEN
+    vowel := vowel+1
+ END_IF
+END 
